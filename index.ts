@@ -13,7 +13,7 @@ server.app.use('/',defaultRoutes);
 server.app.use('/equipos', equipoRoutes);
 
 
-mongoose.connect('mongodb://localhost:27017/cupQatar',(error)=>{
+mongoose.connect('mongodb+srv://user_personajes:equipos2022@cluster0.4okejvu.mongodb.net/cupQatar',(error)=>{
     if(error){
         throw error;
     }
