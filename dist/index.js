@@ -13,7 +13,7 @@ server.app.use(body_parser_1.default.json());
 server.app.use(body_parser_1.default.urlencoded({ extended: true }));
 server.app.use('/', default_routes_1.default);
 server.app.use('/equipos', equipo_routes_1.default);
-mongoose_1.default.connect('mongodb://localhost:27017/cupQatar', (error) => {
+mongoose_1.default.connect('mongodb+srv://user_personajes:equipos2022@cluster0.4okejvu.mongodb.net/cupQatar', (error) => {
     if (error) {
         throw error;
     }
